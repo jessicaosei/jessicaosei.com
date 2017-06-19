@@ -1,0 +1,67 @@
+<button class="nav-icon" tabindex="0" aria-label="Navigation">
+	<span class="nav-line"></span>
+	<span class="nav-line"></span>
+	<span class="nav-line"></span>
+</button>
+
+<nav class="nav">
+	<div class="nav-inner">
+		<button class="nav-icon nav-icon-close" tabindex="0" aria-label="Navigation">
+			<span class="nav-line"></span>
+			<span class="nav-line"></span>
+		</button>
+
+		<ul class="nav-menu">
+			<li class="nav-item">
+				<a href="/" class="nav-link {% if page.url == '/index.html' %} active {% endif %}">Home</a>
+			</li>
+			<div class="nav-dropdown-container">
+				<li class="nav-item nav-dropdown">
+					<button class="nav-link {% if page.type == 'project' %} active {% endif %}">Work</button>
+				</li>
+				<ul class="nav-submenu">
+					{% for project in site.data.work %}
+					<li class="nav-item">
+						{% for item in project.items %}
+						<a href="{{ item.page }}" class="nav-link {% if page.url == item.url %} active {% endif %}">
+						{% endfor %} 
+							{{ project.name }} - {{ project.title }}
+						</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<li class="nav-item">
+				<a href="/about/" class="nav-link {% if page.url == '/about/index.html' %} active {% endif %}">About</a>
+			</li>
+			<!-- <div class="nav-dropdown-container">
+				<li class="nav-item nav-dropdown">
+					<button class="nav-link">Journal</button>
+				</li>
+				<ul class="nav-submenu">
+					<li class="nav-item">
+						<a href="#" class="nav-link">Entry #1</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Entry #2</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Entry #3</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Entry #4</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Entry #5</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Entry #6</a>
+					</li>
+				</ul>
+			</div> -->
+			<li class="nav-item">
+				<a href="/contact/" class="nav-link {% if page.url == '/contact/index.html' %} active {% endif %}">Contact</a>
+			</li>
+		</ul>
+	</div>
+</nav>
