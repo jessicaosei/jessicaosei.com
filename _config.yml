@@ -1,0 +1,21 @@
+name: "Jessica Agyemang | Front End Developer"
+author: "Jessica Agyemang"
+description:
+
+# url: localhost:4000
+
+sass:
+  sass_dir: _sass
+
+markdown: "rdiscount"
+highlighter: "pygments"
+
+# Avoid using the tab key in this file; use 2 spaces instead: http://jekyllrb.com/docs/configuration/
+
+defaults:
+-
+  scope:
+    path: ""
+  values:
+    layout: "default"
+
