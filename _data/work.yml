@@ -1,0 +1,37 @@
+# This data file organizes information pertaining to each project and its associated assets. The code in portfolio/index.html gets looped over for each project here and pulls each item where it's specified to go.
+
+
+- name: "YouTube Red"
+  title: "YouTube Red Originals"
+  items:
+    - src: ""
+      alt: "Thumbnail of YouTube Originals project"
+      url: "/work/youtube-originals/index.html"
+      page: "/work/youtube-originals/"
+
+
+- name: "Google Fiber"
+  title: "\"Find a Tech Partner\" & \"Become a Tech Partner\""
+  items:
+    - src: ""
+      alt: "Thumbnail of Google Fiber Tech Partner project"
+      url: "/work/google-fiber-tech-partner/index.html"
+      page: "/work/google-fiber-tech-partner/"
+
+
+- name: "Google Fiber"
+  title: "Fiber for Small Businesses"
+  items:
+    - src: ""
+      alt: "Thumbnail of Google Fiber Small Businesses project"
+      url: "/work/google-fiber-small-business/index.html"
+      page: "/work/google-fiber-small-business/"
+
+
+- name: "Personal Project"
+  title: "To Hex and Back"
+  items:
+    - src: ""
+      alt: "Thumbnail of To Hex and Back project"
+      url: "/work/to-hex-and-back/index.html"
+      page: "/work/to-hex-and-back/"
