@@ -1,0 +1,37 @@
+
+.contact {
+	height: 520px;
+	min-height: 100vh;
+}
+
+.contact-text {
+	position: absolute;
+	top: 60%;
+	right: 45px;
+	left: 45px;
+	transform: translateY(-60%);
+}
+
+.contact-paragraph {
+	margin-bottom: 16px;
+	line-height: 1.5;
+}
+
+@media screen and (min-width: 550px) {
+
+	.contact {
+		height: 560px;
+		min-height: initial;
+	}
+
+	.contact-text {
+		position: static;
+		max-width: 550px;
+		margin: 120px 0;
+		transform: none;
+	}
+
+	.contact-paragraph {
+		font-size: 18px;
+	}
+}
