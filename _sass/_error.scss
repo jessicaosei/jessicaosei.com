@@ -1,0 +1,37 @@
+
+.error{
+	height: 520px;
+	min-height: 100vh;
+}
+
+.error-text {
+	position: absolute;
+	top: 60%;
+	right: 45px;
+	left: 45px;
+	transform: translateY(-60%);
+}
+
+.error-paragraph {
+	margin-bottom: 16px;
+	line-height: 1.5;
+}
+
+@media screen and (min-width: 550px) {
+
+	.error {
+		height: 560px;
+		min-height: initial;
+	}
+
+	.error-text {
+		position: static;
+		max-width: 550px;
+		margin: 120px 0;
+		transform: none;
+	}
+
+	.error-paragraph {
+		font-size: 18px;
+	}
+}
