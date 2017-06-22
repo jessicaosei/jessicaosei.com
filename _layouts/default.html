@@ -29,6 +29,8 @@
 		{% include footer.html %}
 
 		<script src="{{ site.url }}/js/nav.js"></script>
+		{% if page.type == 'project' %}
 		<script src="{{ site.url }}/js/lightbox.js"></script>
+		{% endif %}
 	</body>
 </html>
