@@ -38,7 +38,9 @@ function setLightboxImage(src) {
 
 		img.classList.add('lightbox-image');
 
-		lightboxImageContainer.appendChild(img);
+		if (!lightboxImageContainer.querySelector('img')) {
+			lightboxImageContainer.appendChild(img);
+		}
 	});
 }
 
