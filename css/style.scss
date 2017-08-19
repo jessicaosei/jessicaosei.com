@@ -56,6 +56,20 @@ li {
 	box-sizing: border-box;
 }
 
+.link {
+	@include layout-flex;
+	@include layout-horizontal;
+	@include layout-center;
+}
+
+.icon-arrow {
+	display: inline-block;
+	width: 30px;
+	height: auto;
+	margin-top: 3px;
+	margin-left: 10px;
+}
+
 /* Body Overlay Styles */
 
 .body-overlay {
