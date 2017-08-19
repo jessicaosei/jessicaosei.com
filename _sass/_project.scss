@@ -34,13 +34,14 @@
 		display: inline-block;
 		margin: 30px 0;
 		padding: 8px 16px;
-		border: 2px solid #777777;
+		border: 2px solid #444444;
+		color: #444444;
 		font-size: 12px;
 		transition: background-color .25s cubic-bezier(.65, 0, .39, .99), color .25s cubic-bezier(.65, 0, .39, .99);
 
 		&:hover {
 			color: #ffffff;
-			background-color: #777777;
+			background-color: #444444;
 		}
 	}
 

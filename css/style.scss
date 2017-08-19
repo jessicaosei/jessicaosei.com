@@ -13,9 +13,9 @@
 /* Global Styles */
 
 body {
-	font-family: 'Roboto Slab', sans-serif;
-	color: #2d3843;
-	background-color: #ffffff;
+	font-family: 'Roboto Slab', serif;
+	color: #444444;
+	background-color: #f4f4f1;
 
 	&.body-overlay-active,
 	&.lightbox-active {
@@ -29,8 +29,21 @@ p {
 }
 
 a {
-	text-decoration: none;
 	color: #777777;
+	text-decoration: none;
+	transition: color .5s cubic-bezier(.65, 0, .39, .99);
+
+	.icon-arrow-path {
+		transition: fill .5s cubic-bezier(.65, 0, .39, .99);
+	}
+
+	&:hover {
+		color: #444444;
+	}
+
+	&:hover .icon-arrow-path {
+		fill: #444444;
+	}
 }
 
 button {
@@ -113,13 +126,14 @@ li {
 	@include layout-flex;
 	@include layout-vertical-reverse;
 	padding: 30px 0;
-	background: #aaaaaa;
+	background: #323232;
 	text-align: center;
 	box-sizing: border-box;
 }
 
 .footer-copy {
 	margin: 16px;
+	color: #f4f4f1;
 	font-size: 14px;
 }
 
@@ -142,7 +156,7 @@ li {
 @media screen and (min-width: 550px) {
 
 	body {
-		background-color: #cccccc;
+		background-color: #f4f4f1;
 	}
 
 	/* Footer Styles */

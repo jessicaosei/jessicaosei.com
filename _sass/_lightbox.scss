@@ -9,7 +9,7 @@
 	z-index: 35;
 	padding: 0 30px;
 	box-sizing: border-box;
-	background-color: rgba(0, 0, 0, .85);
+	background-color: rgba(0, 0, 0, .75);
 	overflow-y: scroll;
 	transition: visibility .5s cubic-bezier(.65, 0, .39, .99), opacity .5s cubic-bezier(.65, 0, .39, .99);
 
@@ -35,7 +35,7 @@
 		width: 24px;
 		height: 2px;
 		margin: auto;
-		background-color: #ffffff;
+		background-color: #f4f4f1;
 
 		&:nth-of-type(1) {
 			top: 8px;
