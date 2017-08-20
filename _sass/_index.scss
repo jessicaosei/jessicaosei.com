@@ -8,21 +8,46 @@
 }
 
 .project-link {
-	display: block;
+	@include layout-flex;
+	@include layout-center;
+	@include layout-center-justified;
 	width: 50%;
-	background-color: #999999;
+
+	&:hover .project-thumbnail-hover {
+		opacity: 1;
+	}
+
+	.project-thumbnail-hover {
+		width: 100%;
+		padding-bottom: 100%;
+		background-color: rgba(255, 255, 255, .25);
+		opacity: 0;
+		transition: opacity .5s cubic-bezier(.65, 0, .39, .99);
+	}
 }
 
-.project-thumbnail {
-	width: 100%;
-	padding-bottom: 100%;
-	background-color: #000000;
+.project-logo {
+	position: absolute;
+	display: inline-block;
+	width: 28%;
+	max-width: 200px;
 }
 
-.project-link:hover  .project-thumbnail {
-	background-color: #555555;
+.project-yt-originals {
+	background-color: #e99996;
 }
 
+.project-fiber-partner {
+	background-color: #96c9e9;
+}
+
+.project-fiber-business {
+	background-color: #96c9e9;
+}
+
+.project-hex {
+	background-color: #000;
+}
 
 @media screen and (min-width: 550px) {
 
@@ -39,11 +64,5 @@
 @media screen and (min-width: 960px) {
 	.project-link {
 		width: 33.333%;
-	}
-
-	.project-thumbnail {
-		width: 100%;
-		padding-bottom: 100%;
-		background-color: #000000;
 	}
 }
