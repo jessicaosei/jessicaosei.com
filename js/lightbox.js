@@ -1,13 +1,13 @@
 'use strict';
 
 var body = document.body;
-var screenshots = document.querySelectorAll('.project-image');
+var screenshots = document.querySelectorAll('.project-image-container');
 var lightbox = document.querySelector('.lightbox');
 var lightboxCloseButton = lightbox.querySelector('.lightbox-icon-close');
 var lightboxImageContainer = lightbox.querySelector('.lightbox-image-container');
 
 function openLightbox(e) {
-	setLightboxImage(e.target.dataset.path).then(function(result) {
+	setLightboxImage(e.currentTarget.dataset.path).then(function(result) {
 		body.classList.add('lightbox-active');
 		lightbox.classList.add('lightbox-open');
 	});
