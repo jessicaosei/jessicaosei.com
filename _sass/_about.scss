@@ -109,8 +109,9 @@
 
 			.about-headline {
 				@include layout-inline;
-				margin-bottom: 0;
 				position: relative;
+				top: -2px;
+				margin-bottom: 0;
 			}
 
 			.about-containers {
