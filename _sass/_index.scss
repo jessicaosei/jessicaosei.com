@@ -22,7 +22,7 @@
 		padding-bottom: 100%;
 		background-color: rgba(244, 244, 241, .24);
 		opacity: 1;
-		transition: opacity.3s cubic-bezier(.65, 0, .39, .99);
+		transition: opacity .3s cubic-bezier(.65, 0, .39, .99);
 	}
 
 	&:hover .project-thumbnail-hover {
