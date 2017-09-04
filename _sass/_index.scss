@@ -1,4 +1,8 @@
 
+.hero-heading {
+	font-size: 28px;
+}
+
 /* Work Styles */
 
 .work {
@@ -71,6 +75,11 @@
 }
 
 @media screen and (min-width: 960px) {
+
+	.hero-heading {
+		font-size: 32px;
+	}
+
 	.project-link {
 		width: 33.333%;
 	}
