@@ -34,12 +34,18 @@
 
 	.project-button {
 		display: inline-block;
+		width: 210px;
 		margin: 30px 0;
-		padding: 8px 16px;
+		padding: 12px 16px;
 		border: 2px solid #444444;
 		color: #444444;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 12px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		text-align: center;
+		text-transform: uppercase;
+		box-sizing: border-box;
 		transition: background-color .25s cubic-bezier(.65, 0, .39, .99), color .25s cubic-bezier(.65, 0, .39, .99);
 
 		&:hover {
