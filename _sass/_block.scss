@@ -26,9 +26,17 @@
 
 	.block-text {
 		position: static;
-		max-width: 550px;
+		max-width: 480px;
 		margin: 120px 0;
 		transform: none;
+	}
+
+}
+
+@media screen and (min-width: 960px) {
+
+	.block-text {
+		max-width: 550px;
 	}
 
 	.block-paragraph {
