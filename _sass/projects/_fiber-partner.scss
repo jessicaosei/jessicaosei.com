@@ -1,0 +1,47 @@
+
+
+.fiber-partner-images {
+
+	.project-image-container {
+		position: relative;
+	}	
+
+	.project-image-container:nth-child(1) {
+		background-image: url('../../images/google-fiber-tech-partner/google-fiber-get-badge.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.project-image-container:nth-child(2) {
+		background-color: #96c9e9;
+	}
+
+	.project-image-container:nth-child(3) {
+		background-color: #ddd;
+	}
+
+	.project-image-container:nth-child(4) {
+		background-image: url('../../images/google-fiber-tech-partner/google-fiber-get-help.jpg');
+		background-size: cover;
+		background-position: top center;
+	}
+
+	.project-image-container:nth-child(5) {
+		background-color: #ddd;
+	}
+
+	.project-image {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		display: inline-block;
+		width: 80%;
+		margin: auto;
+		transform: translateY(-50%);
+	}
+
+
+
+}
+

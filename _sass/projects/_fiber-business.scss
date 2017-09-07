@@ -1,0 +1,41 @@
+
+
+.fiber-business-images {
+
+	.project-image-container {
+		position: relative;
+	}	
+
+	.project-image-container:nth-child(1) {
+		background-image: url('../../images/google-fiber-small-business/google-fiber-business-hero.jpg');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.project-image-container:nth-child(2) {
+		background-color: #96c9e9;
+	}
+
+	.project-image-container:nth-child(3) {
+		background-color: #ddd;
+	}
+
+	.project-image-container:nth-child(4) {
+		background-color: #ddd;
+	}
+
+	.project-image {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		display: inline-block;
+		width: 80%;
+		margin: auto;
+		transform: translateY(-50%);
+	}
+
+
+
+}
+
