@@ -30,7 +30,6 @@
 @media screen and (min-width: 550px) {
 
 	.hero-block {
-		height: 560px;
 		min-height: initial;
 	}
 
@@ -44,6 +43,10 @@
 }
 
 @media screen and (min-width: 960px) {
+
+	.hero-block {
+		height: 560px;
+	}
 
 	.block-text {
 		max-width: 550px;
