@@ -79,9 +79,21 @@
 	.project-images {
 
 		.project-image-container {
+			position: relative;
 			width: 100%;
-			height: 300px;
-			// background-color: #dddddd;
+			height: 320px;
+		}
+
+		.project-image {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			right: 0;
+			display: inline-block;
+			width: 80%;
+			max-width: 360px;
+			margin: auto;
+			transform: translateY(-50%);
 		}
 	}
 }

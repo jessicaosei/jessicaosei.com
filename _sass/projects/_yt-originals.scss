@@ -2,10 +2,6 @@
 
 .yt-originals-images {
 
-	.project-image-container {
-		position: relative;
-	}	
-
 	.project-image-container:nth-child(1) {
 		background-image: url('../../images/yt-originals/yt-originals-unicorn-island-header.jpg');
 		background-size: cover;
@@ -27,19 +23,6 @@
 	.project-image-container:nth-child(5) {
 		background-color: #ddd;
 	}
-
-	.project-image {
-		position: absolute;
-		top: 50%;
-		left: 0;
-		right: 0;
-		display: inline-block;
-		width: 80%;
-		margin: auto;
-		transform: translateY(-50%);
-	}
-
-
 
 }
 
