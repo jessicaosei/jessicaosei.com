@@ -38,8 +38,7 @@
 .project-logo {
 	position: absolute;
 	display: inline-block;
-	width: 28%;
-	max-width: 200px;
+	width: 33%;
 }
 
 .project-yt-originals {
@@ -68,6 +67,15 @@
 		margin: 50px 75px 0;
 		background-color: #ffffff;
 	}
+
+	.project-link {
+		width: 33.333%;
+	}
+
+	.project-logo {
+		width: 25%;
+		max-width: 150px;
+	}
 }
 
 @media screen and (min-width: 960px) {
@@ -76,7 +84,14 @@
 		font-size: 32px;
 	}
 
-	.project-link {
-		width: 33.333%;
+	.project-logo {
+		width: 28%;
+		max-width: 180px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.project-logo {
+		max-width: 210px;
 	}
 }
