@@ -114,11 +114,9 @@
 	.fullbleed {
 
 		.project-images {
-			padding-bottom: 45px;
 
 			.project-image-container {
 				width: auto;
-				margin: 0 45px 30px;
 				cursor: pointer;
 
 				&:last-of-type {
@@ -219,20 +217,3 @@
 		}
 	}
 }
-
-
-@media screen and (min-width: 1440px) {
-	.project-sections {
-		.project-section {
-			&.text-section {
-				width: 50%;
-			}
-
-			&.image-section {
-				width: 50%;
-			}
-		}
-	}
-}
-
-
