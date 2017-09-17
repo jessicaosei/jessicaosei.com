@@ -6,7 +6,8 @@
 
 	.about-image {
 		height: 350px;
-		background: url('../images/about-hero.jpg') center no-repeat / cover;
+		background: url('../images/about-hero.jpg') center no-repeat;
+		background-size: cover;
 	}
 
 	.about-headline {
