@@ -4,9 +4,10 @@ var nav = (function Nav() {
 	var body = document.body;
 	var bodyOverlay = document.querySelector('.body-overlay');
 	var nav = document.querySelector('.nav');
-	var navIcons = document.querySelectorAll('.nav-icon');
-	var navDropdowns = document.querySelectorAll('.nav-dropdown');
-	var navDropdownContainers = document.querySelectorAll('.nav-dropdown-container');
+	var navIcons = Array.prototype.slice.call(document.querySelectorAll('.nav-icon'));
+	var navDropdowns = Array.prototype.slice.call(document.querySelectorAll('.nav-dropdown'));
+	var navDropdownContainers = Array.prototype.slice.call(document.querySelectorAll('.nav-dropdown-container'));
+	var navLinks = Array.prototype.slice.call(document.querySelectorAll('a.nav-link'));
 
 	// Initializes dropdowns to their collapsed state
 	function init() {
@@ -71,6 +72,13 @@ var nav = (function Nav() {
 		});
 	}
 
+	// Ensures nav reset on page changes
+	function resetNav(e) {
+		body.classList.remove('body-overlay-active');
+		bodyOverlay.classList.remove('body-overlay-active');
+		nav.classList.remove('nav-open');
+	}
+
 	// Set up event listeners
 	navIcons.forEach(function(icon) {
 		icon.addEventListener('click', handleNavIconClick);
@@ -78,6 +86,10 @@ var nav = (function Nav() {
 
 	navDropdowns.forEach(function(dropdown) {
 		dropdown.addEventListener('click', handleDropdownClick);
+	});
+
+	navLinks.forEach(function(link) {
+		link.addEventListener('click', resetNav);
 	});
 
 	bodyOverlay.addEventListener('click', handleNavIconClick);
