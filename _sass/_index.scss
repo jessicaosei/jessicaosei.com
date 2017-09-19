@@ -7,16 +7,21 @@
 /* Work Styles */
 
 .work {
-	@include layout-flex;
-	@include layout-horizontal;
-	@include layout-wrap;
+	&:after {
+		content: '';
+		display: block;
+		height: 0;
+		clear: both;
+	}
 }
 
 .project-link {
-	@include layout-flex;
-	@include layout-center;
-	@include layout-center-justified;
+	position: relative;
+	display: block;
+	float: left;
 	width: 50%;
+	background-size: cover;
+	background-position: center;
 
 	.project-thumbnail-hover {
 		width: 100%;
@@ -31,15 +36,15 @@
 	}
 }
 
-.project-link {
-	background-size: cover;
-	background-position: center;
-}
-
 .project-logo {
 	position: absolute;
+	top: 50%;
+	right: 0;
+	left: 0;
 	display: inline-block;
-	width: 33%;
+	width: 60%;
+	margin: auto;
+	transform: translateY(-50%);
 }
 
 .project-yt-originals {
