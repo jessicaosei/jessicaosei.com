@@ -74,9 +74,15 @@ var nav = (function Nav() {
 
 	// Ensures nav reset on page changes
 	function resetNav(e) {
+		e.preventDefault();
+
 		body.classList.remove('body-overlay-active');
 		bodyOverlay.classList.remove('body-overlay-active');
 		nav.classList.remove('nav-open');
+
+		setTimeout(function() {
+			window.location = e.target.href;
+		}, 360);		
 	}
 
 	// Set up event listeners
