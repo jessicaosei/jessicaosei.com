@@ -5,7 +5,6 @@
 @import 'mixins';
 @import 'nav';
 @import 'lightbox';
-@import 'block';
 @import 'index';
 @import 'about';
 @import 'project';
@@ -67,6 +66,34 @@ li {
 	position: relative;
 	padding: 109px 45px 45px;
 	box-sizing: border-box;
+}
+
+.hero-block {
+	height: 520px;
+	min-height: 100vh;
+}
+
+.block-text {
+	position: absolute;
+	top: 60%;
+	right: 45px;
+	left: 45px;
+	transform: translateY(-60%);
+}
+
+.block-paragraph {
+	margin-bottom: 16px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+}
+
+.block-text-link {
+	color: #444444;
+	font-weight: 600;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .link {
@@ -160,6 +187,17 @@ li {
 		background-color: #f4f4f1;
 	}
 
+	.hero-block {
+		min-height: initial;
+	}
+
+	.block-text {
+		position: static;
+		max-width: 480px;
+		margin: 120px 0;
+		transform: none;
+	}
+
 	/* Footer Styles */
 
 	.footer {
@@ -191,6 +229,18 @@ li {
 	/* Global Styles */
 	.block {
 		padding: 135px 75px 60px 75px;
+	}
+
+	.hero-block {
+		height: 560px;
+	}
+
+	.block-text {
+		max-width: 550px;
+	}
+
+	.block-paragraph {
+		font-size: 18px;
 	}
 
 	/* Header Styles */
