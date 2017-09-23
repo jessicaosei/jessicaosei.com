@@ -4,8 +4,9 @@
 - name: "YouTube Red"
   title: "YouTube Red Originals"
   items:
-    - src: ""
-      alt: "Thumbnail of YouTube Originals project"
+    - class: "project-yt-originals"
+      logo: "images/yt-originals/yt-red-logo.svg"
+      alt: "YouTube Red Logo"
       url: "/work/youtube-originals/index.html"
       page: "/work/youtube-originals/"
 
@@ -13,17 +14,19 @@
 - name: "Google Fiber"
   title: "&ldquo;Find a Tech Partner&rdquo; & &ldquo;Become a Tech Partner&rdquo;"
   items:
-    - src: ""
-      alt: "Thumbnail of Google Fiber Tech Partner project"
+    - class: "project-fiber-partner"
+      logo: "images/google-fiber-tech-partner/fiber-logo.svg"
+      alt: "Google Fiber Logo"
       url: "/work/google-fiber-tech-partner/index.html"
       page: "/work/google-fiber-tech-partner/"
 
 
 - name: "Google Fiber"
-  title: "Fiber for Small Businesses"
+  title: "Fiber for Small Business"
   items:
-    - src: ""
-      alt: "Thumbnail of Google Fiber Small Businesses project"
+    - class: "project-fiber-business"
+      logo: "images/google-fiber-small-business/fiber-logo.svg"
+      alt: "Google Fiber Logo"
       url: "/work/google-fiber-small-business/index.html"
       page: "/work/google-fiber-small-business/"
 
@@ -31,7 +34,8 @@
 - name: "Personal Project"
   title: "To Hex and Back"
   items:
-    - src: ""
-      alt: "Thumbnail of To Hex and Back project"
-      url: "/work/to-hex-and-back/index.html"
-      page: "/work/to-hex-and-back/"
+    - class: "project-hex"
+      logo: "images/to-hex-and-back/hex-logo-white.svg"
+      alt: "To Hex and Back Logo"
+      url: "/work/google-fiber-tech-partner/index.html"
+      page: "/work/google-fiber-tech-partner/"

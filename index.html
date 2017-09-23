@@ -25,24 +25,12 @@ title: Jessica Agyemang | Front-End Developer
       </section>
 
       <section class="work fullbleed">
-        <a href="/work/youtube-originals" class="project-link project-yt-originals">
-          <div class="project-thumbnail-hover">
-            <img class="project-logo" src="images/yt-originals/yt-red-logo.svg" alt="YouTube Red Logo">
-          </div>
-        </a>
-        <a href="/work/google-fiber-tech-partner" class="project-link project-fiber-partner">
-          <div class="project-thumbnail-hover">
-            <img class="project-logo" src="images/google-fiber-tech-partner/fiber-logo.svg" alt="Google Fiber Logo">
-          </div>
-        </a>
-        <a href="/work/google-fiber-small-business" class="project-link project-fiber-business">
-          <div class="project-thumbnail-hover">
-            <img class="project-logo" src="images/google-fiber-small-business/fiber-logo.svg" alt="Google Fiber Logo">
-          </div>
-        </a>
-        <a href="/work/to-hex-and-back" class="project-link project-hex">
-          <div class="project-thumbnail-hover">
-            <img class="project-logo" src="images/to-hex-and-back/hex-logo-white.svg" alt="To Hex and Back Logo">
-          </div>
-        </a>
+        {% for project in site.data.work %}
+          {% for item in project.items %}
+            <a href="{{ item.page }}" class="project-link {{ item.class }}">
+              <img class="project-logo" src="{{ item.logo }}" alt="{{ item.alt }}">
+              <div class="project-thumbnail-hover"></div>
+            </a>
+          {% endfor %}
+        {% endfor %}
       </section>
