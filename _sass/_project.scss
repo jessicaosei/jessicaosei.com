@@ -102,6 +102,12 @@
 			margin: auto;
 			transform: translateY(-50%);
 		}
+
+		.project-image-mobile {
+			width: auto;
+			max-width: none;
+			height: 75%;
+		}
 	}
 }
 
