@@ -1,5 +1,14 @@
 # This data file organizes information pertaining to each project and its associated assets. The code in portfolio/index.html gets looped over for each project here and pulls each item where it's specified to go.
 
+- name: "Google Creative Lab"
+  title: "AlphaGo Documentary Site"
+  items:
+    - class: "project-alphago"
+      logo: "images/alphago/alphago-logo.svg"
+      alt: "AlphaGo Logo"
+      url: "/work/alphago/index.html"
+      page: "/work/alphago/"
+
 
 - name: "YouTube Red"
   title: "YouTube Red Originals"

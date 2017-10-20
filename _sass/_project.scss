@@ -1,3 +1,4 @@
+@import 'projects/alphago';
 @import 'projects/yt-originals';
 @import 'projects/fiber-partner';
 @import 'projects/fiber-business';
@@ -34,6 +35,11 @@
 
 		span {
 			font-weight: 700;
+		}
+
+		.film-name {
+			font-weight: 400;
+			font-style: italic;
 		}
 	}
 
