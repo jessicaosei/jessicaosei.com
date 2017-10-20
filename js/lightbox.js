@@ -7,7 +7,7 @@ var lightboxCloseButton = lightbox.querySelector('.lightbox-icon-close');
 var lightboxImageContainer = lightbox.querySelector('.lightbox-image-container');
 
 function openLightbox(e) {
-	setLightboxImage(e.currentTarget.dataset.path).then(function(result) {
+	setLightboxImage(e.currentTarget.dataset.path, e.currentTarget.dataset.type).then(function(result) {
 		body.classList.add('lightbox-active');
 		lightbox.classList.add('lightbox-open');
 	});
@@ -22,7 +22,7 @@ function closeLightbox(e) {
 	lightboxImageContainer.removeChild(lightboxImage);
 }
 
-function setLightboxImage(src) {
+function setLightboxImage(src, type) {
 	return new Promise(function(resolve, reject) {
 		var img = document.createElement('img');
 		
@@ -37,6 +37,10 @@ function setLightboxImage(src) {
 		img.src = src;
 
 		img.classList.add('lightbox-image');
+
+		if (type === 'mobile') {
+			img.classList.add('lightbox-image-mobile');
+		}
 
 		if (!lightboxImageContainer.querySelector('img')) {
 			lightboxImageContainer.appendChild(img);
