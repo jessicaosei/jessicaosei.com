@@ -1,9 +1,9 @@
 .nav-icon {
 	position: absolute;
 	top: 45px;
-	right: 35px;
-	width: 45px;
-	padding: 10px 0;
+	right: 30px;
+	width: 54px;
+	padding: 10px 0 20px;
 	cursor: pointer;
 
 	.nav-line {
@@ -139,7 +139,7 @@
 @media screen and (min-width: 960px) { 
 	.nav-icon {
 		top: 60px;
-		right: 65px;
+		right: 60px;
 	}
 
 	.nav {
