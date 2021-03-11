@@ -6,7 +6,7 @@
     - class: "project-alphago"
       logo: "images/alphago/alphago-logo.svg"
       alt: "AlphaGo Logo"
-      url: "/work/alphago/index.html"
+      url: "/work/alphago/"
       page: "/work/alphago/"
 
 
@@ -16,7 +16,7 @@
     - class: "project-yt-originals"
       logo: "images/yt-originals/yt-red-logo.svg"
       alt: "YouTube Red Logo"
-      url: "/work/youtube-originals/index.html"
+      url: "/work/youtube-originals/"
       page: "/work/youtube-originals/"
 
 
@@ -26,7 +26,7 @@
     - class: "project-fiber-partner"
       logo: "images/google-fiber-tech-partner/fiber-logo.svg"
       alt: "Google Fiber Logo"
-      url: "/work/google-fiber-tech-partner/index.html"
+      url: "/work/google-fiber-tech-partner/"
       page: "/work/google-fiber-tech-partner/"
 
 
@@ -36,5 +36,5 @@
     - class: "project-fiber-business"
       logo: "images/google-fiber-small-business/fiber-logo.svg"
       alt: "Google Fiber Logo"
-      url: "/work/google-fiber-small-business/index.html"
+      url: "/work/google-fiber-small-business/"
       page: "/work/google-fiber-small-business/"
